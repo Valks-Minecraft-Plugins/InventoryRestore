@@ -18,6 +18,7 @@ public class RestoreInvCmd implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (!cmd.getName().equalsIgnoreCase("invrestore")) return false;
 		if (args.length == 0) return false;
+		if (!sender.isOp()) return false;
 		Player target = Bukkit.getPlayer(args[0]);
 		if (target == null) {
 			sender.sendMessage("That player is not online / doesn't exist.");
