@@ -1,0 +1,9 @@
+name: InventoryRestore
+main: me.valkyrienyanko.inventoryRestore.InventoryRestore
+author: valkyrienyanko
+version: 1.0
+api-version: 1.8.8
+commands:
+   invrestore:
+     description: Restore someones inventory after their death.
+     aliases: [invr]
